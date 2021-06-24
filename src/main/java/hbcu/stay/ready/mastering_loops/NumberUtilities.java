@@ -25,11 +25,11 @@ public class NumberUtilities {
 
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        String number = "";
-//        for(int i = start; i < stop; step *= step) {
-//             number += step;
-//        }
-        return number;
+        String squaredNumber = "";
+        for(int i = start; i < stop; i += step) {
+             squaredNumber += i * i;
+        }
+        return squaredNumber;
     }
 
     public static String getRange(int stop) {
@@ -59,11 +59,10 @@ public class NumberUtilities {
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        String result = "";
-//        for(int i = start; i < stop; step += start) {
-//            double total = Math.pow(i, exponent);
-//            result += (double)total;
-//        }
-        return result;
+        String exponentiations = "";
+        for(int i = start; i < stop; i += step) {
+            exponentiations += (int)(Math.pow(i, exponent));
+        }
+        return exponentiations;
     }
 }
